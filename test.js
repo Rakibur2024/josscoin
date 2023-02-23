@@ -23,7 +23,7 @@ console.log(josscoin.getBalanceOfAddress(walletNumber1));
 console.log(josscoin.getBalanceOfAddress(walletNumber2));
 
 const tx2 = new Transactions(walletNumber2, walletNumber1, 50);
-tx1.signTransaction(key2);
+tx2.signTransaction(key2);
 josscoin.addTransaction(tx2);
 
 josscoin.minePendingTransactions(walletNumber1);
